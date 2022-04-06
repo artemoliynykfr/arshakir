@@ -70,6 +70,11 @@
   color: #000000 !important;
 }
 
+.dropdown-menu {
+  background: none !important;
+  border: none !important;
+}
+
 .nav__text {
   color: #000000;
 }
@@ -776,6 +781,7 @@ ul {
 
 body {
   font-family: "Manrope", sans-serif;
+  overflow-x: hidden;
 }
 
 :focus-visible {
