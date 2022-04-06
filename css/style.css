@@ -519,6 +519,14 @@
 
 .accordion-button {
   color: #1b1c31 !important;
+  border: none !important;
+  background: none !important;
+}
+
+.accordion-button:focus {
+  background-color: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .accordion-button::after {
