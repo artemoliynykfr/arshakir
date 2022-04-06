@@ -536,6 +536,14 @@
 
 .accordion-button.collapsed {
   color: #1b1c31 !important;
+  border: none !important;
+  background: none !important;
+}
+
+.accordion-button.collapsed:focus {
+  background-color: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .accordion-button.collapsed .line2 {
