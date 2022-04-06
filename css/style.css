@@ -833,6 +833,16 @@ body {
   border: none !important;
 }
 
+::-moz-selection {
+  color: #fff;
+  background: #4f46ba;
+}
+
+::selection {
+  color: #fff;
+  background: #4f46ba;
+}
+
 .title {
   font-style: normal;
   font-weight: 800;
@@ -1199,6 +1209,10 @@ body {
 
   .info__btn::after {
     display: none;
+  }
+
+  .copy {
+    padding: 20px 0;
   }
 }
 
