@@ -49,6 +49,10 @@ new Swiper('.testimonial__swiper > .swiper-container', {
 	speed: 1500,
 	slidesPerView: 3.2,
 	spaceBetween: 30,
+	autoplay: {
+		delay: 3500,
+		disableOnInteraction: true,
+	},
 	breakpoints: {
 		992: {
 			slidesPerView: 3.2,

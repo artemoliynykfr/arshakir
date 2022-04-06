@@ -513,7 +513,7 @@
 }
 
 .accordion-item:last-child {
-  border-top: none;
+  border-top: none !important;
   border-bottom: 2px solid #8896a6 !important;
 }
 
@@ -649,6 +649,9 @@
   min-width: 368px;
   width: 100%;
   letter-spacing: 1.5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .join__form-input::-webkit-input-placeholder {
@@ -674,6 +677,9 @@
 .join__form-input:focus-visible {
   outline: none;
   opacity: 0.8;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .join__form-btn {
@@ -691,6 +697,9 @@
 .join__form-btn:hover {
   color: #e8f2ff;
   background: #b35a41;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .section__people {
@@ -727,7 +736,7 @@
 
 .people__btn:hover {
   color: #121313;
-  background: #b35a41;
+  background: #d2755c;
 }
 
 .people__btn:hover svg {
