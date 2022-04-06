@@ -70,9 +70,17 @@
   color: #000000 !important;
 }
 
-.dropdown-menu {
+.dropdown-menu,
+.dropdown-toggle {
   background: none !important;
   border: none !important;
+}
+
+.dropdown-menu:focus,
+.dropdown-toggle:focus {
+  background-color: none !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .nav__text {
@@ -494,6 +502,12 @@
   background: none !important;
 }
 
+.accordion-item:focus {
+  background-color: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
 .accordion-item:nth-child(3) {
   border-bottom: 2px solid #8896a6 !important;
 }
@@ -781,7 +795,7 @@ ul {
 
 body {
   font-family: "Manrope", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 :focus-visible {
