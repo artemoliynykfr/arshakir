@@ -61,8 +61,13 @@
 }
 
 .nav__btn-color:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   background: #3b338e;
+}
+
+.nav-link,
+.dropdown-item {
+  color: #000000 !important;
 }
 
 .nav__text {
@@ -1038,7 +1043,7 @@ body {
     bottom: 0;
     right: 0;
     z-index: 999;
-    background-color: #1f1d2b;
+    background-color: #ffffff;
   }
 
   .navbar.active .container {
