@@ -470,11 +470,15 @@
   font-style: normal;
   font-weight: 600;
   color: #453232;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .section__testimonial .slide__subtitle {
   line-height: 16px;
   color: #797979;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .testimonial__subtitle {
@@ -787,6 +791,7 @@
 
 footer {
   background: #1b1c31;
+  overflow-x: hidden !important;
 }
 
 .footer__title {
