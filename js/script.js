@@ -1,3 +1,19 @@
+// testWebP
+function testWebP(callback) {
+	var webP = new Image();
+	webP.onload = webP.onerror = function () {
+		callback(webP.height == 2);
+	};
+	webP.src = 'data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA';
+}
+testWebP(function (support) {
+	if (support == true) {
+		document.querySelector('body').classList.add('webp');
+	} else {
+		document.querySelector('body').classList.add('no-webp');
+	}
+});
+// header burger menu
 function burger() {
 	let header__burger = document.querySelector('.navbar-toggler'),
 		header__menu = document.querySelector('.nav'),
@@ -12,7 +28,7 @@ function burger() {
 	})
 }
 burger();
-
+// business__swiper
 new Swiper(".business__swiper > .swiper-container", {
 	direction: "horizontal",
 	loop: true,
@@ -41,7 +57,7 @@ new Swiper(".business__swiper > .swiper-container", {
 	speed: 5000,
 	freeModeMomentum: false,
 });
-
+// testimonial__swiper
 new Swiper('.testimonial__swiper > .swiper-container', {
 	direction: 'horizontal',
 	loop: !0,
@@ -69,10 +85,8 @@ new Swiper('.testimonial__swiper > .swiper-container', {
 		onlyInViewport: !1
 	},
 });
-
-
+// page animations
 const scrollElements = document.querySelectorAll(".js-scroll");
-
 const elementInView = (el, dividend = 1) => {
 	const elementTop = el.getBoundingClientRect().top;
 
@@ -81,23 +95,18 @@ const elementInView = (el, dividend = 1) => {
 		(window.innerHeight || document.documentElement.clientHeight) / dividend
 	);
 };
-
 const elementOutofView = (el) => {
 	const elementTop = el.getBoundingClientRect().top;
-
 	return (
 		elementTop > (window.innerHeight || document.documentElement.clientHeight)
 	);
 };
-
 const displayScrollElement = (element) => {
 	element.classList.add("scrolled");
 };
-
 const hideScrollElement = (element) => {
 	element.classList.remove("scrolled");
 };
-
 const handleScrollAnimation = () => {
 	scrollElements.forEach((el) => {
 		if (elementInView(el, 1.25)) {
@@ -107,7 +116,6 @@ const handleScrollAnimation = () => {
 		}
 	})
 }
-
 window.addEventListener("scroll", () => {
 	handleScrollAnimation();
 });
