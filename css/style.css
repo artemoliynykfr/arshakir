@@ -1312,6 +1312,16 @@ body {
   .footer {
     padding: 40px 0;
   }
+
+  .js-scroll.scrolled.slide-left {
+    -webkit-animation: fade-in-top 0.6s ease-in-out 0s;
+            animation: fade-in-top 0.6s ease-in-out 0s;
+  }
+
+  .js-scroll.scrolled.slide-right {
+    -webkit-animation: fade-in-top 0.6s ease-in-out 0s;
+            animation: fade-in-top 0.6s ease-in-out 0s;
+  }
 }
 
 @media (max-width: 450px) {
