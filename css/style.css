@@ -1253,6 +1253,9 @@ body {
 
   .accordion {
     min-width: 100% !important;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
 
   .people__title {
