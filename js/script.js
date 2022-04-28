@@ -109,7 +109,7 @@ const hideScrollElement = (element) => {
 };
 const handleScrollAnimation = () => {
 	scrollElements.forEach((el) => {
-		if (elementInView(el, 1.25)) {
+		if (elementInView(el, 1)) {
 			displayScrollElement(el);
 		} else if (elementOutofView(el)) {
 			hideScrollElement(el)
@@ -117,5 +117,8 @@ const handleScrollAnimation = () => {
 	})
 }
 window.addEventListener("scroll", () => {
+	handleScrollAnimation();
+});
+window.addEventListener("load", () => {
 	handleScrollAnimation();
 });
