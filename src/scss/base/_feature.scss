@@ -1,0 +1,33 @@
+.section__feature {
+   padding-bottom: 74px;
+}
+.feature__title {
+   font-style: normal;
+   font-weight: 800;
+   font-size: 40px;
+   line-height: 50px;
+   letter-spacing: -0.03em;
+   color: #000000;
+   max-width: 632px;
+   width: 100%;
+   margin-bottom: 50px;
+   @media (max-width: 450px){
+      font-size: 30px;
+      line-height: 1.2;
+   }
+}
+.feature__item-text {
+   font-family: "Manrope", sans-serif !important;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 23px !important;
+   color: #000000;
+}
+.feature__item {
+   max-width: 258px;
+   width: 100%;
+}
+.feature__item-img {
+   height: 46px;
+   width: auto;
+}

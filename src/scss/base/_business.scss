@@ -1,0 +1,21 @@
+.section__business {
+   padding-bottom: 234px;
+   @media (max-width: 992px) {
+      padding-bottom: 134px;
+   }
+   .swiper-wrapper{
+      transition-timing-function: linear !important;
+      pointer-events: none;
+   }
+   .swiper-slide img{
+      position: static;
+      z-index: -1;
+   }
+}
+.business__title {
+   margin-bottom: 75px; 
+}
+.dropdown-menu[data-bs-popper] {
+   left: 33% !important;
+   transform: translate(-50%, 0);
+}

@@ -1,0 +1,98 @@
+.section__question {
+   padding-bottom: 191px;
+   @media (max-width: 992px) {
+      padding-bottom: 100px;
+   }
+}
+.question__text {
+   font-weight: 400;
+   letter-spacing: 0.01em;
+   color: #1b1c31;
+}
+.question__btn {
+   font-weight: 700;
+   color: #4f46ba;
+   svg {
+      transition: all 0.3s linear;
+   }
+   &:hover {
+      color: #4f46ba;
+      svg {
+         transform: translate(5px, 0);
+         transition: all 0.1s linear;
+      }
+   }
+}
+.accordion {
+   min-width: 622px;
+   width: 100%;
+   @media (max-width: 1200px) {
+      min-width: 100% !important;
+   }
+}
+.accordion-item {
+   border: none !important;
+   border-top: 2px solid #8896a6 !important;
+   background: none !important; 
+   &:focus {
+      background-color: none !important;
+      border: none !important;
+      outline: none !important;
+   }
+   &:nth-child(3) {
+      border-bottom: 2px solid #8896a6 !important;
+   }
+   &:last-child {
+      border-top: none !important;
+      border-bottom: 2px solid #8896a6 !important;
+   }
+}
+.accordion-button {
+   color: #1b1c31 !important;
+   border: none !important;
+   background: none !important;
+   &:focus {
+      background-color: none !important;
+      border: none !important;
+      outline: none !important;
+   }
+   &::after {
+      content: "" !important;
+      background-image: none !important;
+   }
+   &.collapsed {
+      color: #1b1c31 !important;
+      border: none !important;
+      background: none !important;
+      &:focus {
+         background-color: none !important;
+         border: none !important;
+         outline: none !important;
+      }
+      .line2 {
+         transition: all 0.3s ease;
+         transform: translate(-50%, -50%) rotate(0deg);
+      }
+   }
+   .decor {
+      position: absolute;
+      right: 20px;
+   }
+   .line1 {
+      width: 10px;
+      height: 2px;
+      background-color: #1b1c31;
+      top: 0;
+      left: 0;
+   }
+   .line2 {
+      width: 2px;
+      height: 10px;
+      background-color: #1b1c31;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transition: all 0.3s ease;
+      transform: translate(-50%, -50%) rotate(90deg);
+   }
+}

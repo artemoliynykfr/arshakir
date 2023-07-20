@@ -1,0 +1,35 @@
+.info__text {
+   color: #000000;
+   margin-bottom: 44px;
+}
+.info__btn {
+   color: #ffffff;
+   padding: 17px 58px;
+   background: #4f46ba;
+   position: relative;
+   max-width: fit-content;
+   transition: all 0.3s ease;
+   &:hover {
+      color: #ffffff;
+      background: #3b338e;
+   }
+   &::after {
+      content: url(..//img/btn_decor.svg);
+      position: absolute;
+      right: -80%;
+      top: -100%;
+      width: 94px;
+      height: 92px;
+      @media (max-width: 450px) {
+         display: none;
+      }
+   }
+}
+.info__content img {
+   width: 100%;
+   height: auto;
+}
+.info__content.first-item {
+   max-width: 555px;
+   width: 100%;
+}

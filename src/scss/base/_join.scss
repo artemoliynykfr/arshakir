@@ -1,0 +1,115 @@
+.section__join {
+   padding: 130px 0;
+   background: url(..//img/join_bg.webp) center no-repeat;
+   background-size: cover;
+   position: relative;
+   &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: #4f46ba;
+      opacity: 0.4;
+      z-index: 0;
+   }
+   @media (max-width: 992px){
+      padding: 100px 0;
+   }
+}
+.join {
+   background: #3734a9;
+   border-radius: 15px;
+   padding: 66px 54px 56px 48px;
+   max-width: fit-content;
+   position: relative;
+   z-index: 1;
+   @media (max-width: 768px) {
+      padding: 40px;
+      max-width: none;
+      width: 100%;
+   }
+   @media (max-width: 400px) {
+      padding: 20px;
+   }
+   &::after {
+      content: url(..//img/join_img.svg);
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+}
+.join__subtitle {
+   font-family: "Manrope", sans-serif !important;
+   font-style: normal;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #dee1e6;
+}
+.join__title {
+   font-style: normal;
+   font-weight: 800;
+   font-size: 30px;
+   line-height: 40px;
+   letter-spacing: -0.03em;
+   color: #ffffff;
+   max-width: 305px;
+   width: 100%;
+   @media (max-width: 400px) {
+      font-size: 26px;
+      line-height: 1.3;
+   }
+}
+.join__form {
+   height: 56px;
+   @media (max-width: 576px) {
+      height: auto;
+   }
+}
+.join__form-input {
+   height: 100%;
+   padding: 20px 23px;
+   background: #ffffff;
+   opacity: 0.6;
+   border-radius: 10px 0 0 10px;
+   color: #1b1c31;
+   border: none;
+   min-width: 368px;
+   width: 100%;
+   letter-spacing: 1.5px;
+   transition: all 0.3s ease;
+   &::placeholder {
+      letter-spacing: 0;
+   }
+   &:focus-visible {
+      outline: none;
+      opacity: 0.8;
+      transition: all 0.3s ease;
+   }
+   @media (max-width: 768px) {
+      min-width: min-content !important;
+   }
+   @media (max-width: 576px) {
+      border-radius: 10px;
+   }
+}
+.join__form-btn {
+   height: 100%;
+   background: #ff7f5c;
+   border-radius: 0px 10px 10px 0px;
+   padding: 20px 34px;
+   text-transform: uppercase;
+   color: #e8f2ff;
+   border: none;
+   transition: all 0.3s ease;
+   &:hover {
+      color: #e8f2ff;
+      background: #b35a41;
+      transition: all 0.3s ease;
+   }
+   @media (max-width: 576px) {
+      border-radius: 10px;
+      width: 100%;
+   }
+}

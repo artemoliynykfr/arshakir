@@ -1,0 +1,40 @@
+.section__people {
+   background: #1b1c31;
+   padding: 72px 0 90px;
+   overflow: hidden;
+}
+.people__title {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 53px;
+   line-height: 70px;
+   letter-spacing: -0.02em;
+   color: #ffffff;
+   max-width: 520px;
+   width: 100%;
+   @media (max-width: 992px) {
+      font-size: 38px;
+      line-height: 1.2;
+   }
+   @media (max-width: 400px) {
+      font-size: 30px;
+   }
+}
+.people__btn {
+   padding: 18px 25px;
+   background: #f9896b;
+   border-radius: 5px;
+   color: #121313;
+   transition: all 0.3s ease;
+   svg {
+      transition: all 0.3s linear;
+   }
+   &:hover {
+      color: #121313;
+      background: #d2755c;
+      svg {
+         transform: translate(5px, 0);
+         transition: all 0.1s linear;
+      }
+   }
+}

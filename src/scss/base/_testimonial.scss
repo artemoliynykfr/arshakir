@@ -1,0 +1,41 @@
+.section__testimonial {
+   padding-bottom: 220px;
+   @media (max-width: 992px) {
+      padding-bottom: 120px;
+   }
+   .swiper-slide {
+      padding: 10px;
+   }
+   .slide__img {
+      background: #3734a9;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+   }
+   .slide__text {
+      color: #797979;
+   }
+   .slide__title {
+      font-family: "Manrope", sans-serif !important;
+      font-style: normal;
+      font-weight: 600;
+      color: #453232;
+      margin: 0 !important;
+      padding: 0 !important;
+   }
+   .slide__subtitle {
+      line-height: 16px;
+      color: #797979;
+      margin: 0 !important;
+      padding: 0 !important;
+   }
+}
+.testimonial__subtitle {
+   font-weight: 800;
+   text-transform: uppercase;
+   color: #3734a9;
+}
+.testimonial__title {
+   max-width: 533px;
+   width: 100%;
+}
